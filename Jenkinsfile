@@ -1,9 +1,11 @@
 pipeline{
 	agent any
 	stages{
-		stage("build"){
+		stage("create file"){
 			steps{
-				echo "building the application"
+				echo "Creating a test file"
+				cd "C:/Users/DELL/Desktop"
+				sh "touch jenkins_test.txt"
 			}
 		}
 		stage("test"){
