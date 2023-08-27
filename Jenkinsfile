@@ -4,7 +4,7 @@ pipeline{
 		stage("create file"){
 			steps{
 				echo "Creating a test file"
-				cd "C:/Users/DELL/Desktop"
+				sh "cd C:/Users/DELL/Desktop"
 				sh "touch jenkins_test.txt"
 			}
 		}
